@@ -1,0 +1,317 @@
+/* Общие настройки страницы */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Логотип Красавчик */
+.logo {
+    font-size: 28px;
+    line-height: 60px;
+    float: left;
+    padding-top: 8px;
+    font-family: myfonts;
+    font-weight: bolder;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    color: black;
+    float: left;
+    line-height: 40px;
+    margin-left: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+}
+
+
+
+.menu li a {
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+
+
+.main {
+    width: 100%;
+    background:url(../image/1618469258_24-phonoteka_org-p-fon-dlya-magazina-odezhdi-26.jpg) center/cover no-repeat;
+    height:100%; 
+}
+
+.title_container {
+    float: left;
+    color: black;
+    text-align: center;
+    width: 100%;
+    -webkit-animation: titlemove 2s ease forwards;
+    -o-animation: titlemove 2s ease forwards;
+    animation: titlemove 2s ease forwards;
+    animation-delay: 2s forwards;
+    /* opacity: 0; */
+}
+
+.title_container h1 {
+    font-family: myfonts;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.title_container h4 {
+    margin-top: 40px;
+    font-size: 22;
+    color: #393838f3;
+}
+
+.title_container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin: 58px 28px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1);
+    font-family: 'Playfait';
+}
+
+.title_container input:hover {
+    background: black;
+    color: white;
+}
+
+.title_container input:active {
+    transform: scale(1.1);
+}
+/* Шрифты */
+@font-face {
+    font-family: 'myfonts';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Playfait';
+    src: url('../fonts/static/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  /* Блок с футболками */
+.t-shirt a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.T-shirts > h1{
+    color: black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'myfonts';
+}
+.t-shirt > p{
+    font-size: 25px;
+    font-family: 'myfonts';
+    text-align: center;
+}
+.container-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'myfonts';
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+  }
+  .floating-button:hover {
+    background: black;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+  }
+  .kontakti {
+    background: url(image/ryka.png) center/cover no-repeat;
+    color: white;
+}
+
+.kontakticontainer {
+    width: 734px;
+    max-width: 100%;
+}
+
+.kontakticontainer hr {
+    background: black;
+    border: none;
+    height: 4px;
+    width: 71px;
+    margin: 0 auto 60px;
+    opacity: 1;
+}
+
+.kontakticontainer h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "myfonts";
+}
+
+.loremodin {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 48px;
+    /* font-family: 'Playfait'; */
+}
+
+.kontaktigeo {
+    float: left;
+    width: 154px;
+    text-align: center;
+}
+
+.kontaktigeo img {
+    height: 24px;
+}
+
+.kontaktigeo p {
+    font-size: 15px;
+    
+    text-align: center;
+    padding: 10px;
+}
+
+.kontakticontainer h3 {
+    text-align: center;
+    font-size: 21px;
+}
+
+.kontaktiknopki input {
+    width: 352px;
+    height: 34px;
+    padding-left: 14px;
+    background: #d2d6dc;
+    font-size: 16px;
+    margin: 7px;
+}
+
+.kontakticontainer textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    background: rgba(220, 224, 230, 0.93);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.kontakticontainer button {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    height: 46px;
+    width: 124px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 76px;
+}
+
+.kartinkisocial a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.kartinkisocial img {
+    height: 30px;
+}
+/* Адаптация */
+@media screen and (max-width: 414px) {
+    .t-shirt img {
+        width: 100%;
+        height: 100%;
+    }
+    .title_container h4{
+        font-size: 23px;
+        margin-top: 5px;
+        color: white;
+    }
+    .title_container input{
+        background: black;
+        color: white;
+    }
+  }
+@media screen and (max-width: 375px) {
+    .title_container input{
+        background: black;
+        color: white;
+    }
+    .title_container h4{
+        color: black;
+    }
+  }
+  /* Подвал */
+footer {
+    background-color: rgba(0, 0, 0, 0.896);
+    width: 100%;
+    height: 60px;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 22px;
+    font-family: "myfamily";
+}
