@@ -10,7 +10,7 @@
     line-height: 60px;
     float: left;
     padding-top: 8px;
-    font-family: myfonts;
+    font-family: 'logo';
     font-weight: bolder;
 }
 
@@ -36,7 +36,8 @@ nav {
     float: left;
     line-height: 40px;
     margin-left: 40px;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'myfamily';
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
@@ -125,6 +126,12 @@ nav {
     font-style: normal;
     font-weight: normal;
   }
+  @font-face {
+    font-family: 'logo';
+    src: url(../fonts/static/Lora-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+  }
   /* Блок с футболками */
 .t-shirt a{
     display: flex;
@@ -182,7 +189,7 @@ nav {
     transform: translateY(-7px);
   }
   .kontakti {
-    background: url(image/ryka.png) center/cover no-repeat;
+    background: url(../image/ryka.png) center/cover no-repeat;
     color: white;
 }
 
